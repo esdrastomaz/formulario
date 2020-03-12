@@ -1,0 +1,74 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários</title>
+</head>
+<body>    
+    <form action="/efetivar.html" method="POST">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome"
+                   class="form-control" placeholder="Digite seu nome" >    
+        </div>
+    
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"
+                   class="form-control">
+        </div> 
+
+        <div class="form-group">
+            <label for="datanasc">Data Nascimento:</label>
+            <input type="date" name="datanasc" id="datanasc"
+                   class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"
+                   class="form-control">       
+                           
+        </div>
+       
+              
+        
+
+        <!--Radio-->
+
+        <div class="form-group form-check">
+            <div class="custom-control custom-radio">
+                <input type="radio" name="idade" id="idade1" value="1" class="custom-control-input">
+                <label for="idade1" class="custom-control-label">Até 20 anos</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+                <input type="radio" name="idade" id="idade2" value="2" class="custom-control-input">
+                <label for="idade2" class="custom-control-label">De 21 até 30 anos</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+                <input type="radio" name="idade" id="idade3" value="3" class="custom-control-input">
+                <label for="idade3" class="custom-control-label">Acima de 31 anos</label>
+            </div>
+        </div>
+        
+        <!--Chekbox-->
+        <hr>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="concordo" id="concordo" class="custom-control-input">
+            <label for="concordo" class="custom-control-label">Aceita os termos?</label>
+        </div>
+              
+        <hr>
+        <!--Botões-->
+        <div class="col-auto">
+            <input type="submit" name="enviar" value="Enviar" class="btn btn-primary">
+            <input type="reset" name="reset" value="Limpar" class="btn btn-warning">
+        </div>
+    </form>
+    
+</body>
+</html>
