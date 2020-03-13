@@ -8,6 +8,9 @@ function validarFormulario(){
     var idade2 = document.getElementById("idade2").checked;
     var idade3 = document.getElementById("idade3").checked;
     var concordo = document.getElementById("concordo").checked;
+    var enviar = document.getElementById("enviar");
+
+    alert(enviar) = ("Cadastro Efetuado com Sucesso");
 
     if(nome.length == 0){
         alert('Campo nome em branco. Verifique!');

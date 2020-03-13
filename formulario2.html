@@ -12,15 +12,15 @@
     <form action="#" method="POST"
     class="needs-validation m-5" novalidate>
         <div class="form-group">
-            <label for="nome">Nome:</label>
+            <label for="nome"><strong>Nome:</strong></label>
             <input type="text" name="nome" id="nome"
-                   class="form-control" placeholder="Digite seu nome" maxlength="10" required>
+                   class="form-control" placeholder="Digite seu nome" maxlength="25" required>
             <div class="valid-feedback">Tudo Certo</div>
             <div class="invalid-feedback">Por favor, Digite o nome.</div>           
         </div>
     
         <div class="form-group">
-            <label for="senha">Senha:</label>
+            <label for="senha"><strong>Senha:</strong></label>
             <input type="password" name="senha" id="senha"
                    class="form-control" required>
             <div class="valid-feedback">Tudo Certo</div>
@@ -28,7 +28,7 @@
         </div> 
 
         <div class="form-group">
-            <label for="datanasc">Data Nascimento:</label>
+            <label for="datanasc"><strong>Data Nascimento:</strong></label>
             <input type="date" name="datanasc" id="datanasc"
                    class="form-control" required>
             <div class="valid-feedback">Tudo Certo</div>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="form-group">
-            <label for="email">E-mail:</label>
+            <label for="email"><strong>E-mail:</strong></label>
             <input type="email" name="email" id="email"
                    class="form-control" required> 
             <div class="valid-feedback">Tudo Certo</div>
@@ -49,10 +49,10 @@
 
         <!--Radio-->
 
-        <div class="form-group form-check" required>
+        <div class="form-group form-check">
             <div class="custom-control custom-radio">
-                <input type="radio" name="idade" id="idade1" value="1" class="custom-control-input">
-                <label for="idade1" class="custom-control-label">Até 20 anos</label>
+                <input type="radio" name="idade" id="idade1" value="1" class="custom-control-input" required>
+                <label for="idade1" class="custom-control-label">Até 20 anos</label>                 
             </div>
 
             <div class="custom-control custom-radio">
@@ -63,15 +63,13 @@
             <div class="custom-control custom-radio">
                 <input type="radio" name="idade" id="idade3" value="3" class="custom-control-input">
                 <label for="idade3" class="custom-control-label">Acima de 31 anos</label>
-            </div>
-            <div class="valid-feedback">Tudo Certo</div>
-            <div class="invalid-feedback">Por favor, Digite seu e-mail.</div> 
+            </div>          
         </div>
         
         <!--Chekbox-->
         <hr>
         <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="concordo" id="concordo" class="custom-control-input">
+            <input type="checkbox" name="concordo" id="concordo" class="custom-control-input" required>
             <label for="concordo" class="custom-control-label">Aceita os termos?</label>
         </div>
               
