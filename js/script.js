@@ -7,10 +7,9 @@ function validarFormulario(){
     var idade1 = document.getElementById("idade1").checked;
     var idade2 = document.getElementById("idade2").checked;
     var idade3 = document.getElementById("idade3").checked;
-    var concordo = document.getElementById("concordo").checked;
-    var enviar = document.getElementById("enviar");
+    var concordo = document.getElementById("concordo").checked;  
 
-    alert(enviar) = ("Cadastro Efetuado com Sucesso");
+    
 
     if(nome.length == 0){
         alert('Campo nome em branco. Verifique!');
@@ -61,7 +60,9 @@ function validarFormulario(){
     function(){
         'use strict';
         window.addEventListener('load', function(){
+            //pega todos os formularios que vamos trabalhar neste código
             var forms = document.getElementsByClassName('needs-validation');
+            //faz um loop nos elementos
             var validation = Array.prototype.filter.call(forms, function(form){
                 form.addEventListener('submit', function(event){
                     if(form.checkValidity() === false){
@@ -71,6 +72,11 @@ function validarFormulario(){
                     form.classList.add('was-validated');                    
                     
                 },false);
+
+                //evento do botão reset
+                form.addEventListener('reset', function(event){
+                    form.classList.remove('was-validated');
+                }),false;
             });
         }, false);
     }
